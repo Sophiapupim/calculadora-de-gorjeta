@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: " Space Mono
-", serif ;
+    font-family: " Space Mono", serif;
 }
 
 :root {
@@ -80,8 +79,8 @@ main {
 
 .conta:has(input:focus) div,
 .conta:has(input:hover) div,
-.pessoas:has(input:focus) input-box,
-.pessoas:has(input:hover) input-box,
+.pessoas:has(input:focus) .input-box,
+.pessoas:has(input:hover) .input-box,
 .gorjeta #outra:focus,
 .gorjeta #outra:hover  {
     outline: 2px solid var(--light-green);
@@ -109,6 +108,11 @@ main {
     border-radius: 0.3125rem;
     background-color: var(--green-800);
     color: var(--white);
+}
+
+.gorjeta .botao-ativo {
+    background-color: var(--light-green);
+     color: var(--green-800);
 }
 
 .gorjeta input[type="button"]:hover,
@@ -216,7 +220,7 @@ main {
         gap: 3rem;
         padding: 3rem;
         border-radius: 1.5625rem;
-        max-width: 57.5;
+        max-width: 57.5rem;
         margin-inline: auto;
     }
 
